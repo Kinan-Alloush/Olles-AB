@@ -1,113 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Grundinställningar */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
     color: #222;
-    line-height: 1.6;
 }
 
+/* Huvudsektioner */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #003049;
-    color: #fff;
-    padding: 20px 50px;
+    background-color: #0c3c78;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+header img {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.stripes span {
-    display: inline-block;
-    width: 5px;
-    height: 25px;
-    background-color: #e63946;
-    margin-right: 3px;
-}
-
-nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+/* Navigationsmeny */
+nav {
+    background-color: #082d5f;
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    margin: 0 15px;
+    font-weight: 500;
 }
 
 nav a:hover {
-    color: #a8dadc;
+    text-decoration: underline;
 }
 
-.hero {
-    background: linear-gradient(to right, #1d3557, #457b9d);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 2.2em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 30px;
-}
-
-.btn {
-    background: #e63946;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.btn:hover {
-    background: #d62828;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 50px;
-}
-
-.card {
-    background: #fff;
+/* Huvudinnehåll */
+.main {
+    width: 70%;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    padding: 25px;
-    transition: transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    color: #1d3557;
+.main h1 {
+    color: #0c3c78;
+    text-align: center;
     margin-bottom: 10px;
 }
 
+.main h2 {
+    text-align: center;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.main img {
+    display: block;
+    margin: 0 auto 30px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Kontaktsektion */
+.kontakt {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #0c3c78;
+    color: white;
+}
+
+.kontakt img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.kontakt a {
+    color: white;
+    text-decoration: none;
+}
+
+.kontakt a:hover {
+    text-decoration: underline;
+}
+
+/* Sidfot */
 footer {
     text-align: center;
-    background: #003049;
-    color: #f1faee;
-    padding: 20px;
-    font-size: 0.9em;
+    background-color: #082d5f;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .main {
+        width: 90%;
+        padding: 20px;
+    }
 }
