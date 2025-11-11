@@ -1,113 +1,245 @@
-/* Grundinställningar */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
     color: #222;
+    background-color: #f5f7fa;
+    overflow-x: hidden;
 }
 
-/* Huvudsektioner */
+html {
+    scroll-behavior: smooth;
+}
+
 header {
-    background-color: #0c3c78;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(12, 60, 120, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
 }
 
-header img {
-    width: 120px;
-    display: block;
-    margin: 0 auto 10px;
+.logo img {
+    width: 45px;
 }
 
-/* Navigationsmeny */
-nav {
-    background-color: #082d5f;
-    text-align: center;
-    padding: 10px 0;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-nav a {
+.nav-links li {
+    animation: fadeInDown 1s ease forwards;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: 500;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+    color: #ffd700;
 }
 
-/* Huvudinnehåll */
-.main {
-    width: 70%;
-    margin: 40px auto;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
 
-.main h1 {
-    color: #0c3c78;
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(12, 60, 120, 0.7), rgba(12, 60, 120, 0.7)), 
+                url("res/frontbild.png") center/cover no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: fadeInDown 1.2s ease;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    animation: fadeInUp 1.4s ease;
+}
+
+.btn {
+    background-color: #ffd700;
+    color: #0c3c78;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #0c3c78;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+h2 {
+    color: #0c3c78;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #0c3c78;
     margin-bottom: 10px;
 }
 
-.main h2 {
-    text-align: center;
-    font-weight: 400;
-    color: #444;
-    margin-bottom: 30px;
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.main img {
-    display: block;
-    margin: 0 auto 30px;
-    max-width: 100%;
-    border-radius: 8px;
+.about-content img {
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-.main p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Kontaktsektion */
-.kontakt {
-    text-align: center;
-    padding: 40px 0;
+.contact {
     background-color: #0c3c78;
     color: white;
+    text-align: center;
 }
 
-.kontakt img {
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-.kontakt a {
-    color: white;
+.contact a {
+    color: #ffd700;
     text-decoration: none;
 }
 
-.kontakt a:hover {
+.contact a:hover {
     text-decoration: underline;
 }
 
-/* Sidfot */
 footer {
     text-align: center;
     background-color: #082d5f;
-    color: #fff;
-    padding: 10px;
+    color: white;
+    padding: 15px;
     font-size: 14px;
 }
 
-/* Responsiv design */
-@media (max-width: 768px) {
-    .main {
-        width: 90%;
-        padding: 20px;
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(12, 60, 120, 0.95);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
     }
 }
