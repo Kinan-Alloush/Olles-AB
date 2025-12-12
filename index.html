@@ -2,72 +2,55 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olles AB – För framtiden redan idag</title>
+    <title>Olles AB</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="res/OllLogo.gif" alt="Olles AB logotyp">
-                <span>Olles AB</span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#hero">Hem</a></li>
-                <li><a href="#tjanster">Tjänster</a></li>
-                <li><a href="#om">Om oss</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <div></div><div></div><div></div>
-            </div>
-        </nav>
+        <img src="res/OllLogo.gif" alt="Olles AB logotyp" class="logo">
+        <h1>Olles AB</h1>
+        <p class="tagline">– För framtiden redan idag</p>
     </header>
 
-    <section id="hero" class="hero">
-        <div class="hero-text">
-            <h1>För framtiden redan idag</h1>
-            <p>Professionella lösningar för slutväxlar och planetväxlar till maskiner i världsklass.</p>
-            <a href="#tjanster" class="btn">Utforska våra tjänster</a>
+    <nav>
+        <a href="index.html">Hem</a>
+        <a href="om.html">Om oss</a>
+        <a href="pic.html">Bilder</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Bildslider utan JS -->
+    <section class="slider">
+        <div class="slides">
+            <img src="res/frontbild.png" alt="Bild 1">
+            <img src="res/frontbild2.png" alt="Bild 2">
+            <img src="res/frontbild3.png" alt="Bild 3">
         </div>
     </section>
 
-    <section id="tjanster" class="services">
-        <h2>Våra tjänster</h2>
-        <div class="service-cards">
-            <div class="card fade-in">
-                <h3>Försäljning</h3>
-                <p>Vi säljer nya slutväxlar och planetväxlar till över 800 maskinmodeller, alltid med högsta kvalitet.</p>
-            </div>
-            <div class="card fade-in">
-                <h3>Service & Underhåll</h3>
-                <p>Vi utför service, konfiguration och underhåll av växlar – snabbt, säkert och professionellt.</p>
-            </div>
-            <div class="card fade-in">
-                <h3>Speciallösningar</h3>
-                <p>Behöver du något unikt? Vår konstruktionsavdelning skräddarsyr lösningar efter dina behov.</p>
-            </div>
-        </div>
+    <main class="content">
+        <h2>Välkommen till Olles AB</h2>
+        <p>Vi säljer, servar och tillverkar slutväxlar och planetväxlar till över 800 modeller av minigrävare och grävmaskiner i viktklasser från 0,8 till 45 ton.</p>
+
+        <p>Kvaliteten är hög trots låga priser eftersom vi tillverkar delarna själva. Därför köper de flesta kunder en helt ny slutväxel eller planetväxel istället för att renovera.</p>
+
+        <p>Vi erbjuder service, utbytesdelar och kundanpassade lösningar för märken som Bonfiglioli, Brevini, Kayaba, Nachi, Oil Motor, Orbit/Eaton, Sumitomo, SOM, Tong Myung, Teijin Seiki och Nabtesco.</p>
+
+        <p>Har du specifika behov? Vår konstruktionsavdelning har lång branscherfarenhet och tillverkar speciallösningar i moderna maskiner med hög precision.</p>
+    </main>
+
+    <section id="kontakt" class="kontakt">
+        <img src="res/OllLogo.gif" alt="Liten logotyp">
+        <h3>Glenn Klapfventrikel, VD</h3>
+        <p>Gruvövägen, 66433 Grums</p>
+        <p><a href="mailto:info@ollesab.se">info@ollesab.se</a></p>
+        <p>0771–11 23 88 00</p>
     </section>
 
-    <section id="om" class="about">
-        <div class="about-content fade-in">
-            <img src="res/frontbild.png" alt="Olles AB produktbild">
-            <div>
-                <h2>Om Olles AB</h2>
-                <p>Vi säljer, servar och tillverkar slutväxlar och planetväxlar till över 800 modeller av grävmaskiner i klasser från 0,8 till 45 ton.</p>
-                <p>Vår styrka ligger i direkt tillverkning och distribution – vilket ger dig toppkvalitet till bästa pris.</p>
-                <p>Vi samarbetar med ledande märken som Bonfiglioli, Brevini, Kayaba, Nachi, Oil Motor, Orbit/Eaton, Sumitomo, SOM, Tong Myung, Teijin Seiki och Nabtesco.</p>
-                <p>Behöver du specialanpassning? Vi har lång erfarenhet och tillverkar med modern teknik i Sverige.</p>
-            </div>
-        </div>
-    </section>
+    <footer>
+        © 2025 Olles AB – Alla rättigheter förbehållna
+    </footer>
 
-    <section id="kontakt" class="contact">
-        <h2>Kontakta oss</h2>
-        <div class="contact-info fade-in">
-            <img src="res/OllLogo.gif" alt="Liten logotyp">
-            <h3>Glenn Klapfventrikel, VD</h3>
-            <p>Gruvövägen, 66433 Grums</p>
-            <p><a href="mailto:info@ollesab.se">info@ollesab.se
+</body>
+</html>
