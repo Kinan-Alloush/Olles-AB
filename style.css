@@ -1,73 +1,49 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
     background: #fff;
-}
-
-.nav {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.nav a {
     color: #000;
+}
+
+.top {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.top-inner {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .left {
+    font-size: 34px;
     font-weight: bold;
-    text-decoration: underline;
 }
 
-.header {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.header h2 {
+.top .right {
     font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 40px;
 }
 
-.hero img {
-    width: 100%;
-    max-height: 600px;
-    object-fit: cover;
-    display: block;
-}
-
-.content {
-    width: 55%;
-    margin: 50px auto;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-.content p {
-    margin-bottom: 25px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 80px;
-    padding-bottom: 40px;
-}
-
-.footer img {
-    max-width: 220px;
-    margin-bottom: 20px;
-}
-
-.footer p {
-    margin: 6px 0;
-}
-
-.footer hr {
-    margin-top: 40px;
-    border: none;
-    border-top: 1px solid #aaa;
+.text {
     width: 60%;
+    margin: 60px auto;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.text p {
+    margin-bottom: 30px;
+}
+
+.contact {
+    text-align: center;
+    margin: 120px 0 40px 0;
+    font-size: 16px;
+}
+
+.contact p {
+    margin: 6px 0;
 }
