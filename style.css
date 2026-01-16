@@ -17,7 +17,6 @@ body {
   background: #ffffff;
 }
 
-/* Header */
 header {
   background: #ffffff;
   border-bottom: 1px solid #ddd;
@@ -48,7 +47,6 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* Hero */
 .hero {
   background: var(--light);
   padding: 80px 20px;
@@ -83,14 +81,13 @@ nav a:hover {
   max-width: 220px;
 }
 
-/* Content */
+
 .content {
   max-width: 1000px;
   margin: auto;
   padding: 60px 20px;
 }
 
-/* Footer */
 footer {
   background: var(--primary);
   color: #ffffff;
@@ -120,7 +117,6 @@ footer hr {
   color: #aaa;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 32px;
